@@ -1,107 +1,95 @@
-/* Set default font and margin for the entire page */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  /* Set background color and padding for the header */
-  header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-  }
-  
-  
-  /* Center the content within the header */
-  .center {
-    text-align: center;
-  }
-  
-  /* Style the image within the header */
-  .section {
-    height: 150px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .row {
-    text-align: center;
-    align-items: center;
-  }
-  
-  /* Style the main content section */
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    
-  }
-  
-  /* Style each individual section within the main content section */
-  section {
-    flex-basis: 50%;
-    padding: 10px;
-  }
-  
-  /* Add a border to each section within the main content section */
-  section {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  /* Style the heading within each section */
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the list items within each section */
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the strong tag within the list items */
-  li strong {
-    font-weight: bold;
-  }
-  
-  /* Style the contact section */
-  section:nth-of-type(4) {
-    text-align: center;
-  }
-  
-  /* Style the email address within the contact section */
-  section:nth-of-type(4) h5 {
-    margin-top: 10px;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Style the footer links */
-  footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  footer ul li a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  footer ul li a:hover {
-    text-decoration: underline;
-  }
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab04.css">
+    <style>
+        /* CSS for row class */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* CSS for column class */
+        .col-1 { flex: 0 0 8.33%; }
+        .col-2 { flex: 0 0 16.66%; }
+        .col-3 { flex: 0 0 25%; }
+        .col-4 { flex: 0 0 33.33%; }
+        .col-5 { flex: 0 0 41.66%; }
+        .col-6 { flex: 0 0 50%; }
+        .col-7 { flex: 0 0 58.33%; }
+        .col-8 { flex: 0 0 66.66%; }
+        .col-9 { flex: 0 0 75%; }
+        .col-10 { flex: 0 0 83.33%; }
+        .col-11 { flex: 0 0 91.66%; }
+        .col-12 { flex: 0 0 100%; }
+        /* Center text */
+        .center {
+            text-align: center;
+        }
+        /* Set image size */
+        .section img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="row">
+        <div class="col-12 center">
+            <img src="pic.jpg" alt="My Image" class="section">
+        </div>
+        <div class="col-12 center">
+            <h1>Faizan Faryad</h1>
+            <h3>Web Developer</h3>
+        </div>
+        
+    </header>
+
+    <main class="row">
+        <section class="col-6">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>National University Of Science and Technology</strong>
+                     - Bachelor's Degree in Computer Science</li>
+            </ul>
+        </section>
+
+        <section class="col-6">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Intership at Home</strong> Web Developer</li>
+            </ul>
+        </section>
+
+        <section class="col-6">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
+
+        <section class="col-6">
+            <h2>Contact</h2>
+            <h4>Email Address:<h5>faizanfaizy97@gmail.com</h5></h4>
+        </section>
+    </main>
+
+    <footer class="row">
+        <div class="col-12">
+            <p>2023 My Resume. All Rights Reserved.</p>
+            <ul>
+                <li><a href="https://www.facebook.com/BillGates">Facebook</a></li>
+                <li><a href="https://twitter.com/AAliZardari?t=m4NBLl1mp3TlqEYV30BDwA&s=09 ">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/donald-trump-jr-4454b862">LinkedIn</a></li>
+              </ul>
+        </div>
+    </footer>
+</body>
+</html>
