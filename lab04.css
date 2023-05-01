@@ -1,95 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lab04.css">
-    <style>
-        /* CSS for row class */
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        /* CSS for column class */
-        .col-1 { flex: 0 0 8.33%; }
-        .col-2 { flex: 0 0 16.66%; }
-        .col-3 { flex: 0 0 25%; }
-        .col-4 { flex: 0 0 33.33%; }
-        .col-5 { flex: 0 0 41.66%; }
-        .col-6 { flex: 0 0 50%; }
-        .col-7 { flex: 0 0 58.33%; }
-        .col-8 { flex: 0 0 66.66%; }
-        .col-9 { flex: 0 0 75%; }
-        .col-10 { flex: 0 0 83.33%; }
-        .col-11 { flex: 0 0 91.66%; }
-        .col-12 { flex: 0 0 100%; }
-        /* Center text */
-        .center {
-            text-align: center;
-        }
-        /* Set image size */
-        .section img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <header class="row">
-        <div class="col-12 center">
-            <img src="pic.jpg" alt="My Image" class="section">
-        </div>
-        <div class="col-12 center">
-            <h1>Faizan Faryad</h1>
-            <h3>Web Developer</h3>
-        </div>
-        
-    </header>
-
-    <main class="row">
-        <section class="col-6">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>National University Of Science and Technology</strong>
-                     - Bachelor's Degree in Computer Science</li>
-            </ul>
-        </section>
-
-        <section class="col-6">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Intership at Home</strong> Web Developer</li>
-            </ul>
-        </section>
-
-        <section class="col-6">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-            </ul>
-        </section>
-
-        <section class="col-6">
-            <h2>Contact</h2>
-            <h4>Email Address:<h5>faizanfaizy97@gmail.com</h5></h4>
-        </section>
-    </main>
-
-    <footer class="row">
-        <div class="col-12">
-            <p>2023 My Resume. All Rights Reserved.</p>
-            <ul>
-                <li><a href="https://www.facebook.com/BillGates">Facebook</a></li>
-                <li><a href="https://twitter.com/AAliZardari?t=m4NBLl1mp3TlqEYV30BDwA&s=09 ">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/donald-trump-jr-4454b862">LinkedIn</a></li>
-              </ul>
-        </div>
-    </footer>
-</body>
-</html>
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .col-1 {
+    flex-basis: 8.33%;
+    
+  }
+  
+  .col-2 {
+    flex-basis: 16.66%;
+  }
+  
+  .col-3 {
+    flex-basis: 25%;
+  }
+  
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+  
+  .col-5 {
+    flex-basis: 41.66%;
+  }
+  
+  .col-6 {
+    flex-basis: 50%;
+  }
+  
+  .col-7 {
+    flex-basis: 58.33%;
+  }
+  
+  .col-8 {
+    flex-basis: 66.66%;
+  }
+  
+  .col-9 {
+    flex-basis: 75%;
+  }
+  
+  .col-10 {
+    flex-basis: 83.33%;
+  }
+  
+  .col-11 {
+    flex-basis: 91.66%;
+  }
+  
+  .col-12 {
+    flex-basis: 100%;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .section {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  h5 {
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  footer {
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer li a {
+    color: black;
+    text-decoration: none;
+  }
+  
